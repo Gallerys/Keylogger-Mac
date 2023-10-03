@@ -16,6 +16,7 @@ int main(int argc, const char *argv[]) {
     CFRunLoopAddSource(CFRunLoopGetCurrent(), runLoopSource, kCFRunLoopCommonModes);
     CGEventTapEnable(eventTap, true);
 
+    
     if(argc == 2) {
         if(strcmp(argv[1], "clear") == 0) {
             fopen(logfileLocation, "w");
